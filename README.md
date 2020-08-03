@@ -1,2 +1,4 @@
 # DataStructuresAndAlgorithms
-Practice of Data Structures and Algorithms
+
+
+This repository is to practice certain concepts along with Data Structures and Algorithms
