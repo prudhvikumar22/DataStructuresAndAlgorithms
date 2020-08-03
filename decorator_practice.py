@@ -15,4 +15,4 @@ def sum(a,b):
     print(a+b)
 
 
-sum(5,6785644)
+sum(5,88)
