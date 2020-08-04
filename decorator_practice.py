@@ -1,18 +1,20 @@
-import time
+from time import perf_counter
+import functools
 
 
 def timer(func):
+    @functools.wraps(func)
     def wrapper(*args, **kwargs):
-        start = time.time()
+        start = perf_counter()
         func(*args, **kwargs)
-        end = time.time()
-        print("time taken in secs: ", end-start)
+        end = perf_counter()
+        print(f"time taken in secs: {end-start:.4f}")
     return wrapper
 
 
 @timer
-def sum(a,b):
+def sum(a, b):
     print(a+b)
 
 
-sum(5,88)
+sum(5, 88)
